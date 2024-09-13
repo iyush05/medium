@@ -2,9 +2,13 @@ name = "medium"
 compatibility_date = "2024-09-06"
 # compatibility_flags = [ "nodejs_compat" ]
 
+
+
 [vars]
-DATABASE_URL=""
-JWT_SECRET= ""
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZDkwODI0MjgtNThiMC00M2EwLTkwZTItZTRkMjZkMTkwN2UxIiwidGVuYW50X2lkIjoiYmU1YjIxMTI2OGEyMGQ2OWE0MzMyMWY0MTFmY2QwNjY5MzZhYjQzODdlZDc1N2UxYjQxN2MyZjliYzJhODMyMyIsImludGVybmFsX3NlY3JldCI6ImFjMGFlNDZlLWU5ZjYtNGUyYS1hNzQ4LTljZGVmZTM5NWVjZCJ9.J8LoAnUF_mTsjcTRT0pobpWlRLBBcOiV460vJiTvVBw"
+JWT_SECRET = "ayushsecret"
+
+
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
