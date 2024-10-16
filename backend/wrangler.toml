@@ -5,8 +5,8 @@ compatibility_date = "2024-09-06"
 
 
 [vars]
-DATABASE_URL = ""
-JWT_SECRET = ""
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNTA1YmUwZjItZTQ3NS00NWJiLTg3YzItODlmMGY0ZGMxNzMzIiwidGVuYW50X2lkIjoiODk2NTg1ODgyZmIwMTA2MjU1NjdkZWYyMzc3Yjg2MmNkYWRkM2E0MmFiYjFkZTRmOTdjOTVlZGM5YjgwMTE0MiIsImludGVybmFsX3NlY3JldCI6ImQ3MmVhOTI2LTBmMzMtNDg2Yi04Y2ZkLTRhNWQ5OTEyNTQ3NiJ9.l0byHIkCpK9rnv3tq0ZfvUhnqo309BfcS8S4oauQJUg"
+JWT_SECRET = "ayushsecret"
 
 
 # [[kv_namespaces]]

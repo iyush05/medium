@@ -13,13 +13,13 @@ export const userRouter = new Hono<{
 
 userRouter.post('/signup', async(c) => {
     const body = await c.req.json();
-    const { success } = signupInput.safeParse(body);
-    if (!success) {
-      c.status(411);
-      return c.json({
-        message: "Inputs not correct"
-      })
-    }
+    // const { success } = signupInput.safeParse(body);
+    // if (!success) {
+    //   c.status(411);
+    //   return c.json({
+    //     message: "Inputs not correct"
+    //   })
+    // }
     const prisma = new PrismaClient({
       datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate())
@@ -47,13 +47,15 @@ userRouter.post('/signup', async(c) => {
   
 userRouter.post('/signin', async(c) => {
     const body = await c.req.json();
-    const { success } = signinInput.safeParse(body);
-    if (!success) {
-      c.status(411);
-      return c.json({
-        message: "Inputs not correct"
-      })
-    }
+    console.log(body)
+    // const { success } = signinInput.safeParse(body);
+    // console.log("Success ;" , success);
+    // if (!success) {
+    //   c.status(411);
+    //   return c.json({
+    //     message: "Inputs not correct"
+    //   })
+    // }
     const prisma = new PrismaClient({
       datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate())
